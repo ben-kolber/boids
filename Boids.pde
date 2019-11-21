@@ -13,7 +13,7 @@ void draw(){
     boid.display();
     boid.move();
     boid.seperation(boids);
-    //boid.alignment(boids);
+    boid.alignment(boids);
     boid.borders(); 
   }
 }
