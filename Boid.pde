@@ -38,12 +38,10 @@ class Boid{
     //stroke(100);
     //ellipse(0,0,r*10,r*10);
     popMatrix();
-
   }
   
   void applyForce(PVector force){
     acceleration.add(force);
-
   }
   
   void move(){
@@ -68,7 +66,6 @@ class Boid{
     PVector steer = PVector.sub(direction,velocity); 
     steer.limit(maxForce); 
     return steer; 
-    
   }
   
   //Average velocity of all nearby boids
